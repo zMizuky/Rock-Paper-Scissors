@@ -1,5 +1,3 @@
-
-///Pontos
 var pPoints = 0;
 var botPoints = 0;
 var empate = 0;
