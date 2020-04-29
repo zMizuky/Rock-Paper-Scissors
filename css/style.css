@@ -1,0 +1,72 @@
+@keyframes size {
+    from {height: 50px;}
+    to {height: 75px;}
+  }
+
+
+
+
+* {
+    background-color: #ff5b5b;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+p#escol{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+div#txt{
+    color:white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+}
+
+div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 150%);
+}
+
+div#escolhas{
+    color:white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img#bot{
+    background-color: #6aabff00;
+    padding: 0px;
+    border-radius: 0px;
+    transform: translate(300%, -70%);
+}
+
+img.esc {
+    background-color: #6aaaff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img.esc:hover{
+    cursor: pointer;
+    animation-name: size;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

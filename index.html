@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissors Game</title>
+</head>
+<body>
+    <div id="txt">
+        <p id="escol">Escolha uma opção</p>
+    </div>
+    <div id="escolhas">
+        <img class="esc" onmousedown="rockClick()" id="pedra" title="Pedra" src="img/a pedra fofinha.png" alt="Pedra" height="50px">
+        <img class="esc" onmousedown="scissorClick()" id="tesoura"title="Tesoura" src="img/a tesoura fofinha.png" alt="Pedra" height="50px">
+        <img class="esc" onmousedown="paperClick()" id="papel" title="Papel" src="img/o papel fofinho.png" alt="Pedra" height="50px">
+    </div>
+    <div>
+        <p>O bot escolheu: </p>
+        <img height="50px" id="bot">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
