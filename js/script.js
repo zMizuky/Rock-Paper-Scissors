@@ -114,21 +114,21 @@ function chooseWinner(){
     if (scissor === 1 && bpaper === 1){
         pPoints += 1;
         console.log("Resultado: Player ganhou")
-        botImg.src = "../img/o papel fofinho.png";
+        botImg.src = "/img/o papel fofinho.png";
         writeS();
         writeV("Player ganhou")
     }
     if (paper === 1 && brock === 1){
         pPoints += 1;
         console.log("Resultado: Player ganhou")
-        botImg.src = "../img/a pedra fofinha.png";
+        botImg.src = "/img/a pedra fofinha.png";
         writeS();
         writeV("Player ganhou")
     }
     if (rock === 1 && bscissor === 1){
         pPoints += 1;
         console.log("Resultado: Player ganhou")
-        botImg.src = "../img/a tesoura fofinha.png";
+        botImg.src = "/img/a tesoura fofinha.png";
         writeS();
         writeV("Player ganhou")
     }
@@ -137,7 +137,7 @@ function chooseWinner(){
     if (bscissor === 1 && paper === 1){
         botPoints += 1;
         console.log("Resultado: bot ganhou")
-        botImg.src = "../img/a tesoura fofinha.png";
+        botImg.src = "/img/a tesoura fofinha.png";
         writeS();
         writeV("bot ganhou")
     }
@@ -145,14 +145,14 @@ function chooseWinner(){
     if (brock === 1 && scissor === 1){
         botPoints += 1;
         console.log("Resultado: bot ganhou")
-        botImg.src = "../img/a pedra fofinha.png";
+        botImg.src = "/img/a pedra fofinha.png";
         writeS();
         writeV("bot ganhou")
     }
     if (bpaper === 1 && rock === 1){
         botPoints += 1;
         console.log("Resultado: bot ganhou")
-        botImg.src = "../img/o papel fofinho.png";
+        botImg.src = "/img/o papel fofinho.png";
         writeS();
         writeV("bot ganhou")
     }
@@ -160,21 +160,21 @@ function chooseWinner(){
     if (bpaper === 1 && paper === 1){
         empate += 1;
         console.log("Resultado: empate")
-        botImg.src = "../img/o papel fofinho.png";
+        botImg.src = "/img/o papel fofinho.png";
         writeS();
         writeV("empate")
     }
     if (brock === 1 && rock === 1){
         empate += 1;
         console.log("Resultado: empate")
-        botImg.src = "../img/a pedra fofinha.png";
+        botImg.src = "/img/a pedra fofinha.png";
         writeS();
         writeV("empate")
     }
     if (bscissor === 1 && scissor === 1){
         empate += 1;
         console.log("Resultado: empate")
-        botImg.src = "../img/a tesoura fofinha.png";
+        botImg.src = "/img/a tesoura fofinha.png";
         writeS();
         writeV("empate")
     }
