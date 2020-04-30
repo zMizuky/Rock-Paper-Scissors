@@ -1,10 +1,9 @@
 @keyframes size {
     from {height: 50px;}
+    from {background-color: #6aaaff;}
+    to {background-color: #aed1ff;}
     to {height: 75px;}
-  }
-
-
-
+}
 
 * {
     background-color: #ff5b5b;
@@ -26,14 +25,6 @@ p#escol{
     font-size: 20px;
     text-align: center;
     margin-bottom: 60px;
-}
-
-div#txt{
-    color:white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -100%);
 }
 
 div{
@@ -69,4 +60,13 @@ img.esc:hover{
     animation-name: size;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+p#result{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    transform: translate(0%, -130%);
 }

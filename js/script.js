@@ -10,32 +10,33 @@ var bpaper = 0;
 var brock = 0;
 var bscissor = 0;
 
-var txt = document.getElementById("txt");
-var pedra = document.getElementById("pedra");
-var papel = document.getElementById("papel");
-var tesoura = document.getElementById("escolhas");
-
-
-
-
 var botImg = document.getElementById("bot");
-
 var p = document.createElement("p");
-
+p.id = "escol"
 var vp = document.createElement("p");
+vp.id = "result"
+
+function reset(){
+    paper = 0;
+    rock = 0;
+    scissor = 0;
+
+    bpaper = 0;
+    brock = 0;
+    bscissor = 0;
+}
+
 function writeS(){
     p.innerHTML = "Seus pontos: " + pPoints + "<br>" + "Pontos do bot: "+ botPoints + "<br>" + "Empates: " + empate;
-    p.id = "escol"
     document.body.appendChild(p);
 }
 
 function writeV(resultado){
     vp.innerHTML = "Resultado: " + resultado;
-    vp.id = "escol"
     document.body.appendChild(vp);
 }
 writeS();
-writeV();
+writeV("escolha uma opção!");
 function bot(){
     var botChoose = (Math.floor(Math.random() * 3));
     if (botChoose === 0){
@@ -57,18 +58,7 @@ function rockClick(){
     bot()
     console.log("Player botou: pedra")
     chooseWinner();
-    paper = 0;
-    rock = 0;
-    scissor = 0;
-
-    bpaper = 0;
-    brock = 0;
-    bscissor = 0;
-    
-    txt.style.visibility = "visible";
-    papel.style.visibility = "visible";
-    tesoura.style.visibility = "visible";
-    pedra.style.visibility = "visible";
+    reset();
 }
 
 function paperClick(){
@@ -76,18 +66,7 @@ function paperClick(){
     bot()
     console.log("Player botou: papel")
     chooseWinner();
-    paper = 0;
-    rock = 0;
-    scissor = 0;
-
-    bpaper = 0;
-    brock = 0;
-    bscissor = 0;
-    
-    txt.style.visibility = "visible";
-    papel.style.visibility = "visible";
-    tesoura.style.visibility = "visible";
-    pedra.style.visibility = "visible";
+    reset();
 }
 
 function scissorClick(){
@@ -95,18 +74,7 @@ function scissorClick(){
     bot();
     console.log("Player botou: tesoura")
     chooseWinner();
-    paper = 0;
-    rock = 0;
-    scissor = 0;
-
-    bpaper = 0;
-    brock = 0;
-    bscissor = 0;
-    
-    txt.style.visibility = "visible";
-    papel.style.visibility = "visible";
-    tesoura.style.visibility = "visible";
-    pedra.style.visibility = "visible";
+    reset();
 }
 
 function chooseWinner(){
